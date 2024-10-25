@@ -1,10 +1,17 @@
 {
   "scripts": {
-    "build": "node build.js"
+    "dev": "node app.js",
+    "build": "node build.js",
+    "copy404": "copy dist\\index.html dist\\404.html",
+    "predeploy": "npm run build &&  npm run copy404",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }

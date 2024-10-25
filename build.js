@@ -14,7 +14,7 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Copy static assets like CSS, JS, images to the 'dist/public' directory
-fs.copySync('public', 'dist/public');
+fs.copySync('public', 'dist/');
 console.log('Static assets copied.');
 
 // Read your EJS files and render them as HTML

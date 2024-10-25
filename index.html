@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Item List</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <div class="sidebar">
+      <section>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="1" placeholder="Type here">
+        <p id="warning-text" class="warning-text" style="display:none;">Only whole numbers are allowed</p>
+      </section>
+      <button class="bottom-left">OBJ1</button>
+    </div>
+    <div class="content">
+      <ul id="item-list"></ul>
+    </div>
+    <button class="bottom-right">OBJ3</button>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
